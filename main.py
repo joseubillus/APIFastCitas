@@ -100,4 +100,5 @@ def eliminar_paciente(paciente_id: str, db: Session = Depends(get_db)):
 # Ejecutar FastAPI con Uvicorn
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    #uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="172.56.0.22", port=8000)
