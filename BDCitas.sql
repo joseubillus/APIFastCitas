@@ -26,3 +26,16 @@ INSERT INTO Paciente (id, nom, ape, tel, img) VALUES
 ('P010', 'Sofía', 'Hernández', 5555467, 'img10.jpg');
 
 SELECT * FROM Paciente;
+
+CREATE TABLE usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_usuario VARCHAR(50) NOT NULL,
+    contrasena VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuario (nombre_usuario, contrasena) VALUES
+('jose', '123'),
+('ana', '321'),
+('luis789', '123');
+
+SELECT * FROM usuario;
